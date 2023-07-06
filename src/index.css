@@ -1,0 +1,38 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@200;300;400;500;600;700&family=Barlow:wght@200;300;400;500;600;700&family=Gilda+Display&display=swap");
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@layer base{
+    body{
+        @apply font-secondary text-primary;
+    }
+    input::placeholder{
+        @apply text-primary
+    }
+    h2{
+        @apply font-primary text-[45px] mb-4
+    }
+    h3{
+        @apply font-primary text-2xl font-semibold tracking-[1px] mb-2
+    }
+    .btn{
+        @apply text-base tracking-[3px] font-third uppercase text-white flex items-center justify-center transition-all px-8
+    }
+    .btn-sm{
+        @apply h-[48px]
+    }
+    .btn-lg{
+        @apply h-[60px]
+    }
+    .btn-primary{
+        @apply bg-accent hover:bg-accent-hover
+    }
+    .btn-secondary{
+        @apply bg-primary hover:bg-accent
+    }
+    .btn-white{
+        @apply bg-white text-primary
+    }
+}
